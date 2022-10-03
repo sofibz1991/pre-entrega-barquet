@@ -6,7 +6,7 @@ let acertijo = prompt('¿Quién es el ser, el único ser de entre todos los habi
 function jugar(){
     //Con el condicional nos aseguramos que la respuesta tenga 3 o más caracteres para luego ser evaluada como correcta o incorrecta con el loop anidado dentro del mismo. En caso de que la respuesta no posea la cantidad de caracteres requerida se generará otro prompt para ingresar una respuesta válida.
     if (acertijo.length >= 3){
-        while (acertijo != 'el hombre'){
+        while (acertijo.toLowerCase() != 'el hombre'){
             alert ('INCORRECTO');
             acertijo= prompt('Intentalo de nuevo');
         } alert ('MUY BIEN!');
